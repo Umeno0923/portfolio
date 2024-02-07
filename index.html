@@ -1,39 +1,125 @@
 <!doctype html>
 <html lang="ja">
-  <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<head>
 
-    <title>Umeno's Portfolio</title>
-    <meta name="description"
-          content="エンジニアUmenoのポートフォリオです。このポートフォリオではこれまでに手掛けた制作物、身につけたスキルをまとめています。" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="img/logo.png">
 
-    <!-- css -->
-    <link rel="stylesheet" href="css/style.css"/>
+  <title>Umeno's Portfolio</title>
+  <meta name="description" content="エンジニアUmenoのポートフォリオです。このポートフォリオではこれまでに手掛けた制作物、身につけたスキルをまとめています。" />
 
-  </head>
+  <!-- css -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- /css -->
 
-  <body>
+</head>
 
-    <!-- loading -->
-    <div class="loading">
+<body>
+  <section>
+    <header class="container">
+      <div class="page-header">
+        <div class="logo">
+          <a href="#">Portfolio</a>
+        </div>
+        <input type="checkbox" id="click">
 
-    </div>
-    <!-- /loading -->
-
-
-    <!-- header -->
-    <header>
-      <h1>Portfolio</h1>
-      <ul>
-        <li>Home</li>
-        <li>Works</li>
-        <li>Contact</li>
-      </ul>
+        <label for="click" class="mainicon">
+          <div class="menu">
+            <i class='bx bx-menu'></i>
+          </div>
+        </label>
+        <ul>
+          <li><a href="#" class="active" style="--navAni:1">Home</a></li>
+          <li><a href="#about-link" style="--navAni:2">Works</a></li>
+          <li><a href="#project-link" style="--navAni:4">Contact</a></li>
+        </ul>
+      </div>
     </header>
-    <!-- /header -->
 
-  </body>
+    <div class="container">
+      <div class="main">
+        <div class="detail">
+          <h3>Hi, I'm</h3>
+          <h1><span style="color: #1e90ff;">Umeno's</span> Portfolio</h1>
+          <p id="darkk">
+
+          </p>
+          <div class="social">
+            <a href="https://twitter.com/27A0000" style="--socialAni:2"><i class='bx bxl-twitter'></i></a>
+            <a href="https://github.com/Umeno0923" style="--socialAni:3"><i class='bx bxl-github'></i></a>
+          </div>
+        </div>
+        <div class="images">
+          <img src="img/profile.png" alt="" class="img-w">
+        </div>
+      </div>
+    </div><br>
+    <div id="about-link" class="about-container">
+      <img src="img/logo.jpg" /><br><br><br>
+      <div class="about-text">
+        <p>自己紹介</p><br>
+        <p>長崎出身の専門学生</p>
+        <p>小学生の頃からプログラマーになりたいと考えており、高校進学時に福岡に引っ越し、今現在福岡の情報系専門学校に通っております。</p>
+        <p></p><br>
+      </div>
+    </div>
+    <!--services-container---------------------------->
+    <div class="services ">
+      <!--text-->
+      <div id="project-link" class="services-text ">
+        <p>Works</p><br><br>
+        <p>成果物をご紹介します。</p>
+      </div>
+      <div class="box-container">
+        <!--1------------->
+        <div class="box-1">
+          <span>1</span><br>
+          <p class="details"></p>
+          <a href="index.html" target="_blank">
+          <button><b>MyPortfolio</b></button> 
+          </a>
+        </div>
+        <!--2------------->
+        <div class="box-2">
+          <span>2</span><br>
+          <p class="details"></p>
+          <a href="#" target="_blank"></a>
+          <button><b>Coming soon</b></button>
+        </div>
+        <!--3------------->
+        <div class="box-3">
+          <span>3</span><br>
+          <p class="details"></p>
+          <button><b>Coming soon</b></button>
+        </div>
+      </div><br>
+      <!--if you have any project in your mind contact me-->
+
+      <!--footer--------------->
+      <footer>
+        <!--heading-->
+        <p>Contact</p><br>
+        <!--social-->
+        <div id="contact-link" class="sociall-icons">
+          <a href="https://twitter.com/27A0000" style="--socialAni:2"><i class='bx bxl-twitter'></i></a>
+          <a href="https://github.com/Umeno0923" style="--socialAni:3"><i class='bx bxl-github'></i></a>
+        </div>
+        <ul>
+          <li><a href="https://www.fca.ac.jp/">My school</a></li>
+          <li><a href="#">Student Group</a></li>
+        </ul>
+        <p class="copyright">&copy; 2024 umeno</p><br>
+      </footer>
+      <br>
+      <!--social-attach-bar-->
+    </div>
+  </section>
+
+</body>
+
 </html>
