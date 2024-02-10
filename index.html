@@ -1,125 +1,115 @@
 <!doctype html>
 <html lang="ja">
+  <head>
 
-<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="icon" href="img/logo.png">
+    <title>Umeno's Portfolio</title>
+    <meta name="description"
+          content="エンジニアUmenoのポートフォリオです。このポートフォリオではこれまでに手掛けた制作物、身につけたスキルをまとめています。" />
 
-  <title>Umeno's Portfolio</title>
-  <meta name="description" content="エンジニアUmenoのポートフォリオです。このポートフォリオではこれまでに手掛けた制作物、身につけたスキルをまとめています。" />
+    <!-- favicon -->
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" href="img/logo.png" sizes="180x180">
+    <!-- /favicon -->
 
-  <!-- css -->
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <link rel="stylesheet" href="css/style.css" />
-  <!-- /css -->
 
-</head>
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- /css -->
 
-<body>
-  <section>
-    <header class="container">
-      <div class="page-header">
-        <div class="logo">
-          <a href="#">Portfolio</a>
-        </div>
-        <input type="checkbox" id="click">
+  </head>
 
-        <label for="click" class="mainicon">
-          <div class="menu">
-            <i class='bx bx-menu'></i>
-          </div>
-        </label>
-        <ul>
-          <li><a href="#" class="active" style="--navAni:1">Home</a></li>
-          <li><a href="#about-link" style="--navAni:2">Works</a></li>
-          <li><a href="#project-link" style="--navAni:4">Contact</a></li>
-        </ul>
-      </div>
-    </header>
+  <body>
 
-    <div class="container">
-      <div class="main">
-        <div class="detail">
-          <h3>Hi, I'm</h3>
-          <h1><span style="color: #1e90ff;">Umeno's</span> Portfolio</h1>
-          <p id="darkk">
-
-          </p>
-          <div class="social">
-            <a href="https://twitter.com/27A0000" style="--socialAni:2"><i class='bx bxl-twitter'></i></a>
-            <a href="https://github.com/Umeno0923" style="--socialAni:3"><i class='bx bxl-github'></i></a>
-          </div>
-        </div>
-        <div class="images">
-          <img src="img/profile.png" alt="" class="img-w">
-        </div>
-      </div>
-    </div><br>
-    <div id="about-link" class="about-container">
-      <img src="img/logo.jpg" /><br><br><br>
-      <div class="about-text">
-        <p>自己紹介</p><br>
-        <p>長崎出身の専門学生</p>
-        <p>小学生の頃からプログラマーになりたいと考えており、高校進学時に福岡に引っ越し、今現在福岡の情報系専門学校に通っております。</p>
-        <p></p><br>
-      </div>
+    <!-- loading -->
+    <div id="splash">
+      <div id="splash_text"></div>
     </div>
-    <!--services-container---------------------------->
-    <div class="services ">
-      <!--text-->
-      <div id="project-link" class="services-text ">
-        <p>Works</p><br><br>
-        <p>成果物をご紹介します。</p>
-      </div>
-      <div class="box-container">
-        <!--1------------->
-        <div class="box-1">
-          <span>1</span><br>
-          <p class="details"></p>
-          <a href="index.html" target="_blank">
-          <button><b>MyPortfolio</b></button> 
-          </a>
-        </div>
-        <!--2------------->
-        <div class="box-2">
-          <span>2</span><br>
-          <p class="details"></p>
-          <a href="#" target="_blank"></a>
-          <button><b>Coming soon</b></button>
-        </div>
-        <!--3------------->
-        <div class="box-3">
-          <span>3</span><br>
-          <p class="details"></p>
-          <button><b>Coming soon</b></button>
-        </div>
-      </div><br>
-      <!--if you have any project in your mind contact me-->
+    <!-- /loading -->
 
-      <!--footer--------------->
-      <footer>
-        <!--heading-->
-        <p>Contact</p><br>
-        <!--social-->
-        <div id="contact-link" class="sociall-icons">
-          <a href="https://twitter.com/27A0000" style="--socialAni:2"><i class='bx bxl-twitter'></i></a>
-          <a href="https://github.com/Umeno0923" style="--socialAni:3"><i class='bx bxl-github'></i></a>
+    <section id="showcase" class="box" data-section-name="Area1">
+      <div id="particles-js"></div>
+      <div id="wrapper">
+        <!-- header -->
+        <header class="header">
+          <h1>
+            <a href="#">Portfolio</a>
+          </h1>
+          <nav class="header-nav">
+            <ul id="page-link">
+              <li><a href="#showcase">Home</a></li>
+              <li><a href="#works">Works</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </header>
+        <div class="scrolldown2"><span>Scroll</span></div>
+        <!-- /header -->
+
+
+        <!-- welcome screen-->
+        <section id="welcome-screen">
+          <div class="text">
+            <h3>Umeno's</h3>
+            <h2>Portfolio</h2>
+          </div>
+        </section>
+        <!-- /welcome screen -->
+      </div>
+    </section>
+
+
+
+
+    <div class="main">
+      <!-- Works section -->
+      <section id="works" class="box" data-section-name="Area2">
+        <h2>Works</h2>
+        <div class="center-box">
+          <div class="container">
+            <p class="works-name">MyPortfolio</p>
+          </div>
         </div>
-        <ul>
-          <li><a href="https://www.fca.ac.jp/">My school</a></li>
-          <li><a href="#">Student Group</a></li>
-        </ul>
-        <p class="copyright">&copy; 2024 umeno</p><br>
+      </section>
+      <!-- /Works section -->
+
+      <!-- contact -->
+      <section id="contact" class="box" data-section-name="Area3">
+        <h2>Contact</h2>
+      </section>
+      <!-- /contact -->
+
+
+      <!-- footer -->
+      <footer class="footer">
+        &copy; 2024 Umeno
       </footer>
-      <br>
-      <!--social-attach-bar-->
+      <!-- /footer -->
     </div>
-  </section>
 
-</body>
 
+
+    <!-- script -->
+      <!-- JQuery -->
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
+      <!-- /JQuery -->
+
+      <!-- scrollify.js -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js"></script>
+      <!-- /scollify.js -->
+
+      <!-- JavaScript -->
+      <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+      <script src="js/script.js"></script>
+      <script src="js/background.js"></script>
+      <!-- /JavaScript -->
+    <!-- /script -->
+
+
+  </body>
 </html>
