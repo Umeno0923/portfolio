@@ -248,12 +248,22 @@ header a {
   background-color: #333333;
 }
 
-.project {
+.project,
+.project-2,
+.project-4,
+.project-6,
+.project-8,
+.project-10 {
   width: 30%;
   margin-bottom: 3%;
 }
 
-.project img {
+.project img,
+.project-2 img,
+.project-4 img,
+.project-6 img,
+.project-8 img,
+.project-10 img {
   border-radius: 10px;
 }
 
@@ -266,6 +276,48 @@ header a {
 
 .project-container p {
   font-size: 16px;
+}
+
+.project-2{
+  animation-delay: 0.1s;
+}
+
+.project-4{
+  animation-delay: 0.2s;
+}
+
+.project-6{
+  animation-delay: 0.1s;
+}
+
+.project-8{
+  animation-delay: 0.2s;
+}
+
+.project-10{
+  animation-delay: 0.3s;
+}
+
+.ele {
+  opacity: 0;
+}
+
+.fadeUp {
+  animation-name:fadeUpAnime;
+  animation-duration:0.5s;
+  animation-fill-mode:forwards;
+  opacity: 0;
+}
+@keyframes fadeUpAnime{
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 footer {
