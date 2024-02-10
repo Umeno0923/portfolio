@@ -1,0 +1,118 @@
+/* Reset CSS */
+
+/* Box-sizing border-box for all elements */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl,
+figure,
+blockquote,
+fieldset,
+legend {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove default list styles */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove hyperlink default styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remove button and input element border */
+button,
+input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+/* Standardize form field types */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+}
+
+/* Remove user-agent-specific focus styles */
+button:focus,
+input:focus {
+  outline: none;
+}
+
+/* Ensure images don't extend beyond their container */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Remove text input spacing in Safari */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Normalize button style */
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* Remove input type="color" dotted border */
+input[type="color"] {
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+}
+
+/* Clear button */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Remove text selection highlight */
+::selection {
+  background-color: transparent;
+  color: inherit;
+}
