@@ -31,6 +31,8 @@
     </div>
     <!-- /loading -->
 
+
+    <!-- topPage -->
     <section id="showcase" class="box" data-section-name="Area1">
       <div id="particles-js"></div>
       <div id="wrapper">
@@ -61,75 +63,105 @@
         <!-- /welcome screen -->
       </div>
     </section>
+    <!-- /topPage -->
 
 
-
-
+    <!-- mainContent -->
     <div class="main">
 
       <!-- Works section -->
       <section id="works" class="box" data-section-name="Area2">
         <div class="works-container">
-          <div class="center-box">
+          <div class="center-box ">
             <div class="container">
               <h2>Works</h2>
-              <p>成果物</p>
-              <div class="project-container">
-                <div class="project">
-                  <a href="#"><img src="img/myportfolio.png"></a>
-                  <p class="project-font">MyPortfolio</p>
+              <p>過去に制作した創作物</p>
+              <div class="project-container fadeUpTrigger">
+                <div class="project ele fadeUpTrigger">
+                    <a href="https://github.com/Umeno0923/portfolio"><img src="img/myportfolio.png"></a>
+                    <p class="project-font">MyPortfolio</p>
+                  </div>
+                <div class="project-2 ele fadeUpTrigger">
+                  <a href=""><img src="img/COMING%20SOON.png"></a>
+                  <p class="project-font">Coming soon</p>
                 </div>
-                <div class="project">
-                  <a href="#"><img src="img/myportfolio.png"></a>
-                  <p class="project-font">MyPortfolio</p>
+                <div class="project-4 ele fadeUpTrigger">
+                  <a href=""><img src="img/COMING%20SOON.png"></a>
+                  <p class="project-font">Coming soon</p>
                 </div>
-                <div class="project">
-                  <a href="#"><img src="img/myportfolio.png"></a>
-                  <p class="project-font">MyPortfolio</p>
+                <div class="project-6 ele fadeUpTrigger">
+                  <a href=""><img src="img/COMING%20SOON.png"></a>
+                  <p class="project-font">Coming soon</p>
                 </div>
-                <div class="project">
-                  <a href="#"><img src="img/myportfolio.png"></a>
-                  <p class="project-font">MyPortfolio</p>
+                <div class="project-8 ele fadeUpTrigger">
+                  <a href=""><img src="img/COMING%20SOON.png"></a>
+                  <p class="project-font">Coming soon</p>
                 </div>
-                <div class="project">
-                  <a href="#"><img src="img/myportfolio.png"></a>
-                  <p class="project-font">MyPortfolio</p>
-                </div>
-                <div class="project">
-                  <a href="#"><img src="img/myportfolio.png"></a>
-                  <p class="project-font">MyPortfolio</p>
+                <div class="project-10 ele fadeUpTrigger">
+                  <a href=""><img src="img/COMING%20SOON.png"></a>
+                  <p class="project-font">Coming soon</p>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
-
-
       </section>
       <!-- /Works section -->
 
       <!-- contact -->
       <section id="contact" class="box" data-section-name="Area3">
-        <h2>Contact</h2>
+        <div class="contact-container">
+          <h2>Contact</h2>
+          <p>ご連絡はこちらから</p>
+          <div class="form-container">
+            <form>
+              <div>
+                <label for="name">名前</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div>
+                <label for="email">メールアドレス</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div>
+                <label for="message">メッセージ</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+              </div>
+              <div>
+                <button type="submit">送信</button>
+              </div>
+            </form>
+
+          </div>
+          <div class="sns-links">
+            <ul class=”sns-btn”>
+              <li><a href=”https://twitter.com/27A0000” target=”_blank”><img src="img/snsIcon/logo-black.png" alt="X"></a></li>
+              <li><a href=”https://www.instagram.com/umeno_0000/” target=”_blank”><img src="img/snsIcon/Instagram_Glyph_Black.png" alt=”Instagram”></a></li>
+              <li><a href=”https://github.com/Umeno0923” target=”_blank”><img src="img/snsIcon/github-mark.png" alt="github"></a></li>
+            </ul>
+          </div>
+
+        </div>
       </section>
       <!-- /contact -->
 
 
       <!-- footer -->
-      <footer class="footer">
+      <footer id="footer" class="box" data-section-name="Area4">
         &copy; 2024 Umeno
       </footer>
       <!-- /footer -->
 
     </div>
-
+    <!-- /mainContent -->
 
 
     <!-- script -->
       <!-- JQuery -->
       <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="js/script.js.js"></script>
       <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
+
       <!-- /JQuery -->
 
       <!-- scrollify.js -->
@@ -142,7 +174,6 @@
       <script src="js/background.js"></script>
       <!-- /JavaScript -->
     <!-- /script -->
-
 
   </body>
 </html>

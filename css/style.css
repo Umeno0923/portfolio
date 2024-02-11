@@ -242,19 +242,29 @@ header a {
   margin: 0.5rem 0 1.168rem 0;
 }
 
-#contact {
-  padding-top: 80px;
-  height: 100vh;
-  background-color: #333333;
-}
-
-.project {
+.project,
+.project-2,
+.project-4,
+.project-6,
+.project-8,
+.project-10 {
   width: 30%;
   margin-bottom: 3%;
 }
 
-.project img {
+.project img,
+.project-2 img,
+.project-4 img,
+.project-6 img,
+.project-8 img,
+.project-10 img {
   border-radius: 10px;
+  transition-duration: 1s;
+  background-position: 50% 50%;
+  background-size: cover;
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
 }
 
 .project-container {
@@ -268,9 +278,143 @@ header a {
   font-size: 16px;
 }
 
-footer {
-  text-align:center;
-  color: black;
+.project-container img:hover {
+  opacity:0.5;
+  transition:0.2s;
 }
 
+.project-2{
+  animation-delay: 0.1s;
+}
 
+.project-4{
+  animation-delay: 0.2s;
+}
+
+.project-6{
+  animation-delay: 0.1s;
+}
+
+.project-8{
+  animation-delay: 0.2s;
+}
+
+.project-10{
+  animation-delay: 0.3s;
+}
+
+.ele {
+  opacity: 0;
+}
+
+.fadeUp {
+  animation-name:fadeUpAnime;
+  animation-duration:0.5s;
+  animation-fill-mode:forwards;
+  opacity: 0;
+}
+@keyframes fadeUpAnime{
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#contact {
+  padding-top: 80px;
+  height: 100%;
+  background-color: #d7d7d7;
+}
+
+.contact-container h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin: 1.46rem 0 1.168rem 0;
+}
+
+.contact-container p {
+  font-size: 1rem;
+  margin: 0.5rem 0 1.168rem 0;
+}
+
+form {
+  width: 50%;
+  display: flex;
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact-container {
+  text-align: center;
+}
+
+.form-container {
+  max-width: 600px;
+  margin: 5% auto;
+}
+
+form {
+  display: grid;
+  gap: 10px;
+}
+
+form div {
+  display: grid;
+  gap: 5px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  background-color: #c0c000;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #c0c000;
+}
+
+.sns-links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.sns-links ul {
+  display: flex;
+}
+
+.sns-links li {
+  margin: 50px 5px;
+}
+
+#footer {
+  text-align:center;
+  color: white;
+  background-color: black;
+}
