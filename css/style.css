@@ -242,12 +242,6 @@ header a {
   margin: 0.5rem 0 1.168rem 0;
 }
 
-#contact {
-  padding-top: 80px;
-  height: 100vh;
-  background-color: #333333;
-}
-
 .project,
 .project-2,
 .project-4,
@@ -265,6 +259,12 @@ header a {
 .project-8 img,
 .project-10 img {
   border-radius: 10px;
+  transition-duration: 1s;
+  background-position: 50% 50%;
+  background-size: cover;
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
 }
 
 .project-container {
@@ -276,6 +276,11 @@ header a {
 
 .project-container p {
   font-size: 16px;
+}
+
+.project-container img:hover {
+  opacity:0.5;
+  transition:0.2s;
 }
 
 .project-2{
@@ -320,9 +325,21 @@ header a {
   }
 }
 
+#contact {
+  padding-top: 80px;
+  height: 98vh;
+  background-color: #9b9b9b;
+}
+
+#contact h2, p {
+  color: black;
+  text-align: center;
+}
+
 footer {
   text-align:center;
   color: black;
+  height: 2vh;
 }
 
 
