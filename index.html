@@ -110,13 +110,44 @@
 
       <!-- contact -->
       <section id="contact" class="box" data-section-name="Area3">
-        <h1>Contact</h1>
+        <div class="contact-container">
+          <h2>Contact</h2>
+          <p>ご連絡はこちらから</p>
+          <div class="form-container">
+            <form>
+              <div>
+                <label for="name">名前</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div>
+                <label for="email">メールアドレス</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div>
+                <label for="message">メッセージ</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+              </div>
+              <div>
+                <button type="submit">送信</button>
+              </div>
+            </form>
+
+          </div>
+          <div class="sns-links">
+            <ul class=”sns-btn”>
+              <li><a href=”https://twitter.com/27A0000” target=”_blank”><img src="img/snsIcon/logo-black.png" alt="X"></a></li>
+              <li><a href=”https://www.instagram.com/umeno_0000/” target=”_blank”><img src="img/snsIcon/Instagram_Glyph_Black.png" alt=”Instagram”></a></li>
+              <li><a href=”https://github.com/Umeno0923” target=”_blank”><img src="img/snsIcon/github-mark.png" alt="github"></a></li>
+            </ul>
+          </div>
+
+        </div>
       </section>
       <!-- /contact -->
 
 
       <!-- footer -->
-      <footer class="footer">
+      <footer id="footer" class="box" data-section-name="Area4">
         &copy; 2024 Umeno
       </footer>
       <!-- /footer -->
