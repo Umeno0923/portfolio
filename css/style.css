@@ -417,4 +417,5 @@ button[type="submit"]:hover {
   text-align:center;
   color: white;
   background-color: black;
+  position: sticky;
 }
