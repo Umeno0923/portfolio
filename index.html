@@ -33,7 +33,7 @@
 
 
     <!-- topPage -->
-    <section id="showcase" class="box" data-section-name="Area1">
+    <section id="showcase" class="box" data-section-name="Home">
       <div id="particles-js"></div>
       <div id="wrapper">
         <!-- header -->
@@ -70,7 +70,7 @@
     <div class="main">
 
       <!-- Works section -->
-      <section id="works" class="box" data-section-name="Area2">
+      <section id="works" class="box" data-section-name="Works">
         <div class="works-container">
           <div class="center-box ">
             <div class="container">
@@ -109,12 +109,13 @@
       <!-- /Works section -->
 
       <!-- contact -->
-      <section id="contact" class="box" data-section-name="Area3">
+      <section id="contact" class="box" data-section-name="Contact">
         <div class="contact-container">
           <h2>Contact</h2>
           <p>ご連絡はこちらから</p>
           <div class="form-container">
-            <form>
+            <form action="https://api.staticforms.xyz/submit" method="post">
+              <input type="hidden" name="accessKey" value="6276b1f9-31e4-4afd-b4a9-85d5b531882a">
               <div>
                 <label for="name">名前</label>
                 <input type="text" id="name" name="name" required>
@@ -130,16 +131,18 @@
               <div>
                 <button type="submit">送信</button>
               </div>
+              <input type="hidden" name="redirectTo" value="https://umeno27a.com">
             </form>
 
           </div>
           <div class="sns-links">
-            <ul class=”sns-btn”>
-              <li><a href=”https://twitter.com/27A0000” target=”_blank”><img src="img/snsIcon/logo-black.png" alt="X"></a></li>
-              <li><a href=”https://www.instagram.com/umeno_0000/” target=”_blank”><img src="img/snsIcon/Instagram_Glyph_Black.png" alt=”Instagram”></a></li>
-              <li><a href=”https://github.com/Umeno0923” target=”_blank”><img src="img/snsIcon/github-mark.png" alt="github"></a></li>
+            <ul class="sns-btn">
+              <li><a href="https://twitter.com/27A0000" target="_blank"><img src="img/snsIcon/logo-black.png" alt="X"></a></li>
+              <li><a href="https://www.instagram.com/umeno_0000/" target="_blank"><img src="img/snsIcon/Instagram_Glyph_Black.png" alt="Instagram"></a></li>
+              <li><a href="https://github.com/Umeno0923" target="_blank"><img src="img/snsIcon/github-mark.png" alt="github"></a></li>
             </ul>
           </div>
+          
 
         </div>
       </section>
@@ -147,7 +150,7 @@
 
 
       <!-- footer -->
-      <footer id="footer" class="box" data-section-name="Area4">
+      <footer id="footer" class="box" data-section-name="fooder">
         &copy; 2024 Umeno
       </footer>
       <!-- /footer -->
