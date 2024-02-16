@@ -38,6 +38,18 @@ jQuery(window).on('scroll', function () {
   }
 });
 
+$("#hamburger").click(function () {
+  $(this).toggleClass('active');
+  $(".sp-nav").toggleClass('show');
+});
+
+$(".sp-nav a").click(function() {
+  setTimeout(function() {
+    $(".sp-nav").removeClass('show');
+    $("#hamburger").removeClass('active');
+  }, 500); 
+});
+
 
 //=========================スクロールで一画面移動=========================
 $.scrollify({
